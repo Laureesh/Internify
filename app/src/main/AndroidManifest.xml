@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Internify">
 
+        <activity android:name=".AboutActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".StudentMainActivity" />
         <activity android:name=".CompanyMainActivity" />
