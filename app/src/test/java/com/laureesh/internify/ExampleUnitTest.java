@@ -1,4 +1,4 @@
-package com.laureesh.internify;
+package mobile.internify;
 
 import org.junit.Test;
 

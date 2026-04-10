@@ -1,4 +1,4 @@
-package com.laureesh.internify;
+package mobile.internify;
 
 import android.content.Intent;
 import android.os.Bundle;
