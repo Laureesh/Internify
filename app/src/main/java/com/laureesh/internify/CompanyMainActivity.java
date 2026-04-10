@@ -1,4 +1,4 @@
-package jw.internify;
+package com.laureesh.internify;
 
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
