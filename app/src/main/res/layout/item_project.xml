@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Placeholder item layout for ProjectListAdapter.
+
+    Intended widgets:
+    - Project title
+    - Company name
+    - Short summary or description preview
+    - Pay
+    - Status badge
+
+    Integration contract:
+    - ProjectListAdapter should look for these exact IDs:
+      projectTitleText, projectCompanyText, projectSummaryText,
+      projectPayText, projectStatusText.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Use the exact IDs listed above so ProjectListAdapter can bind ProjectEntity safely. -->
+
+</LinearLayout>

@@ -1,9 +1,57 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:padding="24dp"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <FrameLayout
+        android:id="@+id/animationScene"
+        android:layout_width="240dp"
+        android:layout_height="228dp"
+        android:layout_marginBottom="8dp"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+        <View
+            android:id="@+id/headerGlow"
+            android:layout_width="220dp"
+            android:layout_height="152dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:background="@drawable/internify_header_glow" />
+
+        <ImageView
+            android:id="@+id/bodyImage"
+            android:layout_width="188dp"
+            android:layout_height="191dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:contentDescription="@string/internify_body"
+            android:src="@drawable/internify_body" />
+
+        <ImageView
+            android:id="@+id/hatImage"
+            android:layout_width="150dp"
+            android:layout_height="126dp"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="-38dp"
+            android:translationX="5dp"
+            android:contentDescription="@string/internify_hat"
+            android:src="@drawable/internify_hat" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/logoSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="@string/login_animation_subtitle"
+        android:textColor="#1E3A8A"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/email"

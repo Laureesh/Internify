@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Placeholder layout for ProjectListFragment.
+
+    Intended widgets:
+    - RecyclerView for projects
+    - Empty-state TextView or illustration
+    - Optional progress indicator
+
+    Integration contract:
+    - ProjectListFragment should look for these exact IDs:
+      projectRecyclerView, projectEmptyStateText, projectLoadingBar.
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Use the exact IDs listed above so ProjectListFragment can wire adapter, loading state, and empty state. -->
+
+</FrameLayout>

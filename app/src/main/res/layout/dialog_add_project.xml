@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Placeholder layout for AddProjectDialogFragment.
+
+    Intended widgets:
+    - Short form version of the add-project screen
+    - Title input
+    - Description input
+    - Pay input
+    - Deadline input
+    - Save and Cancel buttons
+
+    Integration contract:
+    - AddProjectDialogFragment should look for these exact IDs:
+      projectTitleInput, projectDescriptionInput, companyNameInput,
+      projectPayInput, projectDeadlineInput, projectStatusInput,
+      saveProjectButton, cancelProjectButton.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Use the exact IDs listed above so dialog code and full-screen form code stay consistent. -->
+
+</LinearLayout>

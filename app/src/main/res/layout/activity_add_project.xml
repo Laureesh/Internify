@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Placeholder layout for AddProjectActivity.
+
+    Intended widgets:
+    - Project title input
+    - Description input
+    - Company name input
+    - Pay input
+    - Deadline input
+    - Status selector
+    - Save and Cancel buttons
+
+    Integration contract:
+    - AddProjectActivity and AddProjectDialogFragment should both use these exact IDs:
+      projectTitleInput, projectDescriptionInput, companyNameInput,
+      projectPayInput, projectDeadlineInput, projectStatusInput,
+      saveProjectButton, cancelProjectButton.
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/addProjectContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Use the exact IDs listed above so both full-screen and dialog flows can share the same field names. -->
+
+    </LinearLayout>
+</ScrollView>

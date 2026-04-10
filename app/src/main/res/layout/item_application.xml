@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Placeholder item layout for ApplicationListAdapter.
+
+    Intended widgets:
+    - Applicant or project name depending on viewer role
+    - Application date
+    - Current status
+    - Optional short note preview
+
+    Integration contract:
+    - ApplicationListAdapter should look for these exact IDs:
+      applicationPrimaryText, applicationSecondaryText,
+      applicationDateText, applicationStatusText.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Use the exact IDs listed above so ApplicationListAdapter can bind ApplicationEntity safely. -->
+
+</LinearLayout>

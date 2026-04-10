@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Placeholder menu for DashboardActivity.
+
+    Suggested actions:
+    - Add Project
+    - View Applications
+    - Logout
+
+    Integration contract:
+    - DashboardActivity should expect these exact menu item IDs:
+      action_add_project, action_view_applications, action_logout.
+-->
+<menu>
+
+    <!-- Use the exact IDs listed above so DashboardActivity can respond to menu events safely. -->
+
+</menu>

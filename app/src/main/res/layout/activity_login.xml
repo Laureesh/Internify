@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Placeholder layout for LoginActivity.
+
+    Intended widgets:
+    - App logo or project animation at the top
+    - Email EditText
+    - Password EditText
+    - Login Button
+    - Register navigation Button
+    - Optional error message TextView
+
+    Integration contract:
+    - LoginActivity should look for these exact IDs:
+      loginLogoImage, loginTitleText, emailInput, passwordInput,
+      loginButton, goToRegisterButton, loginErrorText.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Add the exact IDs listed above so LoginActivity can bind to them safely. -->
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Placeholder layout for ProjectDetailActivity.
+
+    Intended widgets:
+    - Project title TextView
+    - Company name TextView
+    - Description TextView
+    - Pay, deadline, and status metadata section
+    - Apply, Edit, and Delete buttons depending on user role
+
+    Integration contract:
+    - ProjectDetailActivity should look for these exact IDs:
+      projectDetailTitleText, projectDetailCompanyText, projectDetailDescriptionText,
+      projectDetailPayText, projectDetailDeadlineText, projectDetailStatusText,
+      applyProjectButton, editProjectButton, deleteProjectButton.
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/projectDetailContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Add the exact IDs listed above so ProjectDetailActivity can bind project data correctly. -->
+
+    </LinearLayout>
+</ScrollView>

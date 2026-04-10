@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Placeholder layout for DashboardActivity.
+
+    Intended widgets:
+    - Toolbar or top app bar
+    - Optional greeting or summary header
+    - Fragment container for ProjectListFragment and ApplicationListFragment
+    - Optional floating action button for adding a project
+
+    Integration contract:
+    - DashboardActivity should look for these exact IDs:
+      dashboardToolbar, dashboardGreetingText, dashboardFragmentContainer, addProjectFab.
+    - dashboardFragmentContainer is where ProjectListFragment and
+      ApplicationListFragment should be swapped.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Add the exact IDs listed above so DashboardActivity can wire fragments and menu actions. -->
+
+</LinearLayout>
