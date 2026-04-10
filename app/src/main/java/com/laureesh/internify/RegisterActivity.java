@@ -1,4 +1,4 @@
-package jw.internify;
+package com.laureesh.internify;
 
 import android.content.Intent;
 import android.os.Bundle;
