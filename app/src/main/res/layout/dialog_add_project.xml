@@ -1,27 +1,61 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
-    Placeholder layout for AddProjectDialogFragment.
-
-    Intended widgets:
-    - Short form version of the add-project screen
-    - Title input
-    - Description input
-    - Pay input
-    - Deadline input
-    - Save and Cancel buttons
-
-    Integration contract:
-    - AddProjectDialogFragment should look for these exact IDs:
-      projectTitleInput, projectDescriptionInput, companyNameInput,
-      projectPayInput, projectDeadlineInput, projectStatusInput,
-      saveProjectButton, cancelProjectButton.
--->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:padding="24dp">
+    android:layout_height="wrap_content">
 
-    <!-- Use the exact IDs listed above so dialog code and full-screen form code stay consistent. -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-</LinearLayout>
+        <EditText
+            android:id="@+id/projectTitleInput"
+            android:hint="Project Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/projectDescriptionInput"
+            android:hint="Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/companyNameInput"
+            android:hint="Company Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/projectPayInput"
+            android:hint="Pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/projectDeadlineInput"
+            android:hint="Deadline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/projectStatusInput"
+            android:hint="Status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/saveProjectButton"
+            android:text="Save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/cancelProjectButton"
+            android:text="Cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</ScrollView>
