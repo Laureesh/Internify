@@ -1,39 +1,67 @@
 package mobile.internify.activities;
 
-/*
- * Placeholder blueprint for the project detail screen.
- *
- * Intended responsibilities:
- * 1. Receive a project ID from an intent extra.
- * 2. Load the matching project from the repository or database layer.
- * 3. Display the project title, description, owner, pay, deadline, and status.
- * 4. Provide actions like apply, edit, or delete depending on the user role.
- * 5. Show DeleteConfirmationDialogFragment before destructive actions.
- *
- * Integration contract with other files:
- * - Must define intent extra constant:
- *   EXTRA_PROJECT_ID = "mobile.internify.extra.PROJECT_ID".
- * - Must use layout file: activity_project_detail.xml.
- * - That layout should expose:
- *   projectDetailTitleText, projectDetailCompanyText, projectDetailDescriptionText,
- *   projectDetailPayText, projectDetailDeadlineText, projectDetailStatusText,
- *   applyProjectButton, editProjectButton, deleteProjectButton.
- * - Should load project data through ProjectRepository.getProjectById(projectId)
- *   or through a future detail ViewModel if you add one.
- * - If deleteProjectButton is pressed, this activity should open
- *   DeleteConfirmationDialogFragment.
- * - If deletion is confirmed, this activity should call
- *   ProjectRepository.deleteProject(projectId).
- *
- * Merge safety note:
- * - If your partner builds ProjectRepository and DeleteConfirmationDialogFragment,
- *   this file should call their methods and callbacks using the exact names above.
- */
-@SuppressWarnings("unused")
-public final class ProjectDetailActivity {
-    private ProjectDetailActivity() {
-        // Placeholder only. Replace with AppCompatActivity implementation later.
+import android.os.Bundle;
+import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
+import androidx.appcompat.app.AppCompatActivity;
+import mobile.internify.R;
+
+public final class ProjectDetailActivity extends AppCompatActivity {
+    public static final String EXTRA_PROJECT_ID = "mobile.internify.extra.PROJECT_ID";
+    private TextView projectDetailTitleText;
+    private TextView projectDetailCompanyText;
+    private TextView projectDetailDescriptionText;
+    private TextView projectDetailPayText;
+    private TextView projectDetailDeadlineText;
+    private TextView projectDetailStatusText;
+    private Button applyProjectButton;
+    private Button editProjectButton;
+    private Button deleteProjectButton;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_project_detail);
+
+        projectDetailTitleText = findViewById(R.id.projectDetailTitleText);
+        projectDetailCompanyText = findViewById(R.id.projectDetailCompanyText);
+        projectDetailDescriptionText = findViewById(R.id.projectDetailDescriptionText);
+        projectDetailPayText = findViewById(R.id.projectDetailPayText);
+        projectDetailDeadlineText = findViewById(R.id.projectDetailDeadlineText);
+        projectDetailStatusText = findViewById(R.id.projectDetailStatusText);
+        applyProjectButton = findViewById(R.id.applyProjectButton);
+        editProjectButton = findViewById(R.id.editProjectButton);
+        deleteProjectButton = findViewById(R.id.deleteProjectButton);
+
+        int projectId = getIntent().getIntExtra(EXTRA_PROJECT_ID, -1);
+
+        loadProject(projectId);
+
+        applyProjectButton.setOnClickListener(v ->
+                Toast.makeText(this, "Applied to project!",
+                        Toast.LENGTH_SHORT).show()
+        );
+
+        editProjectButton.setOnClickListener(v ->
+                Toast.makeText(this, "Edit feature coming soon",
+                        Toast.LENGTH_SHORT).show()
+        );
+
+        deleteProjectButton.setOnClickListener(v -> {
+            Toast.makeText(this, "Project deleted (temporary)",
+                    Toast.LENGTH_SHORT).show();
+            finish();
+        });
+    }
+
+    private void loadProject(int projectId) {
+        projectDetailTitleText.setText("Sample Project #" + projectId);
+        projectDetailCompanyText.setText("Company: Internify Inc.");
+        projectDetailDescriptionText.setText("This is a sample project description.");
+        projectDetailPayText.setText("Pay: $100");
+        projectDetailDeadlineText.setText("Deadline: 1 week");
+        projectDetailStatusText.setText("Status: Open");
     }
 }
-
 
