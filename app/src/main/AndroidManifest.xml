@@ -13,6 +13,7 @@
         android:theme="@style/Theme.Internify">
 
         <activity android:name=".activities.AddProjectActivity" />
+        <activity android:name=".activities.ProjectDetailActivity" />
         <activity android:name=".AboutActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".StudentMainActivity" />
