@@ -1,32 +1,69 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
-    Placeholder layout for ProjectDetailActivity.
-
-    Intended widgets:
-    - Project title TextView
-    - Company name TextView
-    - Description TextView
-    - Pay, deadline, and status metadata section
-    - Apply, Edit, and Delete buttons depending on user role
-
-    Integration contract:
-    - ProjectDetailActivity should look for these exact IDs:
-      projectDetailTitleText, projectDetailCompanyText, projectDetailDescriptionText,
-      projectDetailPayText, projectDetailDeadlineText, projectDetailStatusText,
-      applyProjectButton, editProjectButton, deleteProjectButton.
--->
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:id="@+id/projectDetailContent"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="24dp">
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-        <!-- Add the exact IDs listed above so ProjectDetailActivity can bind project data correctly. -->
+        <TextView
+            android:id="@+id/projectDetailTitleText"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/projectDetailCompanyText"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/projectDetailDescriptionText"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/projectDetailPayText"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/projectDetailDeadlineText"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/projectDetailStatusText"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/applyProjectButton"
+            android:text="Apply"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/editProjectButton"
+            android:text="Edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/deleteProjectButton"
+            android:text="Delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 
     </LinearLayout>
 </ScrollView>
